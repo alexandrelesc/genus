@@ -1,0 +1,53 @@
+read_lib library/slow.lib
+
+read_hdl source/fulladder.v
+
+elaborate fulladder
+
+syn_gen
+
+syn_map
+
+syn_opt
+
+report area
+
+report power
+
+report gates
+
+report timing -unconstrained
+
+gui_show 
+
+gui_hide
+
+
+-------------------------------------------------
+
+
+read_lib library/slow.lib
+
+read_hdl source/counter.v
+
+elaborate counter
+
+check_design -unresolved
+
+syn_gen
+
+syn_map
+
+syn_opt
+
+report area
+
+report power
+
+report gates
+
+report timing -lint
+
+write_hdl -lec
+
+gui_show 
