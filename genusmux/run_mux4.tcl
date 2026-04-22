@@ -16,7 +16,7 @@ set RTL_PATH  $LOCAL_DIR/source
 set LIB_PATH  $LOCAL_DIR/library
 # Define o caminho onde está a biblioteca tecnológica (.lib)
 
-set LIBRARY   slow.lib
+set LIBRARY   tsmc180nm.lib
 # Nome da biblioteca a ser utilizada
 # "slow" normalmente representa o pior caso de timing (mais conservador)
 
