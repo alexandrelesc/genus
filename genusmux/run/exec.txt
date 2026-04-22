@@ -1,0 +1,1 @@
+xrun -64bit -sv ../source/mux4.sv ../tb/mux4_tb.sv
