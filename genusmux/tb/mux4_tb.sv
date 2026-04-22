@@ -1,5 +1,3 @@
-`timescale 1ns/1ps
-
 module mux4_tb;
 
     // Sinais de teste (testbench)
