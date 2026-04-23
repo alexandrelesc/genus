@@ -1,6 +1,7 @@
 #### Simple Script for RTL->Gate-Level Flow ####
 # Este script realiza a síntese de um MUX 4:1 (mux4)
 # utilizando o Genus, desde a leitura do RTL até a geração da netlist.
+# genus -files run_mux4.tcl
 
 # *************************************************
 # * Local Variable settings for this design
@@ -17,6 +18,7 @@ set LIB_PATH  $LOCAL_DIR/library
 # Define o caminho onde está a biblioteca tecnológica (.lib)
 
 set LIBRARY   tsmc180nm.lib
+# set LIBRARY   gscl45nm.lib
 # Nome da biblioteca a ser utilizada
 # "slow" normalmente representa o pior caso de timing (mais conservador)
 
