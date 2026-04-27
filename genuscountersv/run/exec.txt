@@ -1,0 +1,1 @@
+xrun -64bit -sv ../tb/counter_tb.sv ../source/counter.sv
