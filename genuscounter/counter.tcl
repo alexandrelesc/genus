@@ -1,10 +1,15 @@
 # Prática de síntese e temporização do contador — Cadence Genus, Legacy UI.
-# No Linux: entre em genuscounter e execute genus -legacy_ui.
+# No Linux: entre em genuscounter e abra o Genus com genus ou genus -legacy_ui.
 # No Genus: digite as instruções na ordem dos slides, uma de cada vez.
 # Para executar o arquivo de uma vez: source /caminho/para/Roteiro_Counter_Genus.tcl
 # Entradas esperadas na pasta de partida: source/counter.v e library/fast.lib.
 # Restrições acrescentadas para a aula: um clock, T = 10.000 ps, e entrada m com 1.000 ps.
 # Os comandos nativos define_clock e external_delay abaixo usam picosegundos.
+
+# Seleciona a Legacy UI antes da leitura da biblioteca e do RTL.
+if {[is_common_ui_mode]} {
+  set_db common_ui false
+}
 
 # 02 — Pasta de trabalho e caminhos de entrada
 # Se library estiver no diretório pai, ajuste LIB_PATH na atribuição abaixo.
