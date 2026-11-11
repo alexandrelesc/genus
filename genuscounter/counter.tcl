@@ -149,6 +149,10 @@ report area > $_REPORTS_PATH/${DESIGN}_area.rpt
 report gates
 # Grava o relatório de células em counter_gates.rpt.
 report gates > $_REPORTS_PATH/${DESIGN}_gates.rpt
+# Mostrar o power reportado para o projeto.
+report power
+# Grava o relatório de power
+report power > $_REPORTS_PATH/${DESIGN}_power.rpt
 
 # 15 — Relatórios de temporização
 # Verifica possíveis lacunas ou inconsistências nas restrições de temporização.
